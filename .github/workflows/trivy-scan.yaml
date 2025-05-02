@@ -26,14 +26,14 @@ jobs:
         run: docker build -t finops-frontend ./frontend
 
       - name: 🛡️ Scan backend image with Trivy
-        uses: aquasecurity/trivy-action@latest
+        uses: aquasecurity/trivy-action@v0.28.0
         with:
           image-ref: finops-backend
           format: table
           severity: CRITICAL,HIGH
 
       - name: 🛡️ Scan frontend image with Trivy
-        uses: aquasecurity/trivy-action@latest
+        uses: aquasecurity/trivy-action@v0.28.0
         with:
           image-ref: finops-frontend
           format: table
