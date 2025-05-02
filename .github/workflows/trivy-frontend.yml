@@ -20,3 +20,5 @@ jobs:
         with:
           image-ref: finops-frontend
           severity: CRITICAL,HIGH
+          exit-code: 1
+          ignore-unfixed: true
