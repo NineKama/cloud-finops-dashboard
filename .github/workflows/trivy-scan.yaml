@@ -3,7 +3,7 @@ name: 🛡️ Trivy Docker Image Scan
 on:
   push:
     branches:
-      - "*"
+      - "**"
   pull_request:
     branches:
       - "*"
