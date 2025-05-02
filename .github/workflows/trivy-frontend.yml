@@ -1,4 +1,4 @@
-name: 🔍 Scan Frontend Image
+name: 🔍 Trivy Scan Frontend Image
 
 on:
   push:
