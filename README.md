@@ -1,5 +1,8 @@
 # 🌤️ Cloud FinOps Dashboard
 
+[![Trivy Backend Scan](https://github.com/NineKama/cloud-finops-dashboard/actions/workflows/trivy-backend.yml/badge.svg)](https://github.com/NineKama/cloud-finops-dashboard/actions/workflows/trivy-backend.yml)
+[![Trivy Frontend Scan](https://github.com/NineKama/cloud-finops-dashboard/actions/workflows/trivy-frontend.yml/badge.svg)](https://github.com/NineKama/cloud-finops-dashboard/actions/workflows/trivy-frontend.yml)
+
 A cloud-native FinOps dashboard to visualize AWS cost data by day, service, and region.
 Built with **FastAPI**, **React (Vite)**, **Recharts**, and deployed via **Docker Compose**.
 
