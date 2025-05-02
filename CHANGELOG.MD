@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+--- 
+## v1.0.1 - Add Trivy CI Scan · 2025-05-03
+
+### 🔐 CI Security
+- ✅ Trivy scan added for backend & frontend Docker images
+- 🔍 CI fails if CRITICAL or HIGH vulnerabilities are found
+- 🧱 Workflow split into `trivy-backend.yml` and `trivy-frontend.yml`
+- 🏷️ Badges added to README for scan status
+
 ---
 
 ## v1.0.0 - Initial Release · 2025-05-03
