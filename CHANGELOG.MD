@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+---
+## v1.1.0 - Add Redis Caching · 2025-05-04
+
+### ✨ Features
+- 🚀 Added Redis caching for all AWS Cost Explorer API calls (daily, by service, by region)
+- 🧠 Generic `cache_or_fetch()` function to simplify cache logic
+- 🧱 Introduced Redis container to `docker-compose.yml`
+- ⚡ Significantly improved dashboard speed and reduced AWS API cost
+
+### 🛠 Infra
+- Redis added as a service in Docker Compose stack
+
 --- 
 ## v1.0.1 - Add Trivy CI Scan · 2025-05-03
 
