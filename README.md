@@ -16,7 +16,7 @@ Built with **FastAPI**, **React (Vite)**, **Recharts**, and deployed via **Docke
 * ✅ Toggle individual services on/off
 * 🐳 Fully containerized using Docker Compose
 * 🔄 Designed to support **Azure** and **GCP** in the future
-
+* 🪙 Redis caching for faster performance and reduced AWS API cost
 ---
 
 ## 📦 Tech Stack
@@ -24,7 +24,7 @@ Built with **FastAPI**, **React (Vite)**, **Recharts**, and deployed via **Docke
 | Layer    | Tech                    |
 | -------- | ----------------------- |
 | Frontend | React + Vite + Recharts |
-| Backend  | FastAPI + Boto3         |
+| Backend  | FastAPI + Boto3 + Redis |
 | Infra    | Docker Compose          |
 
 ---
@@ -99,6 +99,7 @@ docker-compose up --build
 
 * `.env` is gitignored
 * Only least privilege IAM permissions required
+* Docker images are scanned for vulnerabilities via GitHub Actions and Trivy
 
 ---
 
