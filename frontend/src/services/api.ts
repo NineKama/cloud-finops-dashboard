@@ -18,3 +18,10 @@ export const fetchCostsByRegion = async (): Promise<RegionCost[]> => {
   const res = await axios.get(`${BASE_URL}/costs/by-region`);
   return res.data.data;
 };
+
+import { CostSummary } from "../types";
+export async function fetchCostSummary(): Promise<CostSummary> {
+  const res = await fetch("http://localhost:8000/costs/summary");
+  const json = await res.json();
+  return json.data;
+}

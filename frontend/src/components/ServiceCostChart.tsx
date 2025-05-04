@@ -46,7 +46,7 @@ export default function ServiceCostChart({ data }: Props) {
     <div style={{ width: '100%', marginTop: '2rem' }}>
       <h2>Total Cost by Service (7 Days)</h2>
 
-      <div style={{ width: '100%', height: 30 * filtered.length }}>
+      <div style={{ width: '100%', height: 50 * filtered.length }}>
         <ResponsiveContainer>
           <BarChart
             layout="vertical"

@@ -14,3 +14,9 @@ export type DailyCost = {
     region: string;
     cost: number;
   };
+
+  export interface CostSummary {
+    by_region: RegionCost[];
+    by_service: ServiceCost[];
+    daily: DailyCost[];
+  }
